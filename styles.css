@@ -1,0 +1,306 @@
+/* TO-DO
+fix overflow-x issue
+*/
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
+}
+
+h1 {
+    /* be careful! font size gets inherited from parents */
+    /* rem is better root M size cause it's not inherited, instead of % (percent) and em that will inherit the parents */
+    margin: 50px auto 0 auto;
+    font-size: 5.625rem;
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    z-index: 1;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+    font-size: 2rem;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+p {
+    line-height: 2;
+    color: #40514E;
+    font-size: 1.5em;
+}
+
+hr {
+    /* make a border with dotted style with specified color and width of 7px */
+    border: dotted #66BFBF 7px;
+    /* remove the border bottom */
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.top-container {
+    background-color: #E4F6F6;
+    padding-top: 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.middle-container {
+    margin: 100px 0;
+    /* padding: 100px auto; */
+    /* margin: 100px auto; */
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    /* this will overflow the margin from the default setting */
+    padding: 50px 0 20px;
+}
+
+.intro {
+    width: 50%;
+    margin: auto;
+}
+
+.profile-pict {
+    width: 12.5%;
+}
+
+.contact-head {
+    width: 50%;
+    margin: auto;
+}
+
+.contact-message {
+    width: 50%;
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.cloud {
+    position: absolute;
+    background-image: url(/images/cloud.png);
+    height: 48px;
+    width: 150px;
+}
+
+.top-cloud {
+    right: 5em;
+    top: 0em;
+    /* margin-right: 2em;
+    margin-top: 6em; */
+
+}
+
+.bottom-cloud {
+    left: 0em;
+    bottom: -3em;
+    /* height: 48px;
+    width: 150px; */
+}
+
+.mountain {
+    width: 40%;
+    /* height: 200%; */
+    /* width: 100%; */
+}
+
+.skill-row {
+    width: 50%;
+    margin: 200px auto;
+    text-align: left;
+
+}
+
+.computer-img {
+    width: 25%;
+    /* this will make the image float to the left letting the text to be on the right */
+    /* float image on left and letting the text to wrap on the right */
+    /* NOTE : only use float to wrap text to an image on left or right NOT FOR LAYOUT */
+    float: left;
+    margin-right: 30px;
+}
+
+.chilli-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+
+.copyright {
+    color: #EAF6F6;
+    padding: 20px 0;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    /* max-width: 212px; */
+}
+
+/* this will clear everything on the left */
+/* the opposite of clear this will clear everything on the left and wrap the text to the bottom */
+/* .comp-skill-description {
+    
+    clear: left;
+}
+
+.chili-skill-description {
+    clear: right;
+} */
+
+/* block element will take up the entire width not letting any element to sit on the right and left of the element */
+@media screen and (max-width: 1500px) {
+
+    .mountain {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .mountain {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    p {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    .name-title {
+        font-size: 3.5em;
+        z-index: 10;
+    }
+    .profile-pict {
+        width: 25%;
+        margin: auto;
+    }
+
+    .top-cloud {
+        right: -4em;
+        top: 0em;
+        z-index: -1;
+
+    }
+
+    .bottom-cloud {
+        left: -3em;
+        bottom: -3em;
+    }
+
+    .skill-row {
+        text-align: center;
+
+    }
+
+    .computer-img {
+        width: 50%;
+
+        /* this will make the image float to the left letting the text to be on the right */
+        /* float image on left and letting the text to wrap on the right */
+        /* NOTE : only use float to wrap text to an image on left or right NOT FOR LAYOUT */
+        float: none;
+        margin: auto;
+    }
+
+    .chilli-img {
+        width: 50%;
+        /* this will make the image float to the left letting the text to be on the right */
+        /* float image on left and letting the text to wrap on the right */
+        /* NOTE : only use float to wrap text to an image on left or right NOT FOR LAYOUT */
+        float: none;
+        margin: auto;
+
+    }
+}
+
+@media (max-width: 560px) {
+    .computer-img {
+        width: 100%;
+    }
+
+    .chilli-img {
+        width: 100%;
+    }
+
+    .profile-pict {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
