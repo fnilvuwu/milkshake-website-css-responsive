@@ -110,7 +110,7 @@ hr {
 
 .cloud {
     position: absolute;
-    background-image: url("../images/cloud.png");
+    background-image: url("images/cloud.png");
     height: 48px;
     width: 150px;
 }
